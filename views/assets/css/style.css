@@ -1,0 +1,26 @@
+@import url(reset.css);
+@import url(components/content.css);
+@import url(components/footer.css);
+@import url(components/navbar.css);
+@import url(components/sidebar.css);
+@import url(components/cards.css);
+@import url(components/categorias.css);
+@import url(components/usuarios.css);
+
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 68px 1fr 22px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 490px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 48px 1fr 22px;
+    }
+}
+
